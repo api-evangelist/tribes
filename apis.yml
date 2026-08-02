@@ -1,7 +1,27 @@
 aid: tribes
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tribes.png
 name: Tribes
-description: Tribes is a company surfaced as a portfolio company of kindred-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Tribes (Tribes Protocol, Inc.) is a web3-native social wallet and messaging application
+  that lets people co-own and manage digital assets together while communicating directly
+  from within the wallet itself. Its "co-wallets" combine group messaging and shared custody
+  so crypto communities, creators, and DAOs can coordinate and make decisions without relying
+  on external tools like Discord or Twitter. Founded by former Coinbase engineer Hish
+  Bouabdallah, Tribes raised a $3.3M pre-seed round in January 2023 led by Kindred Ventures,
+  with South Park Commons and Script Capital. It is a consumer crypto product; its public code
+  surface is the tribes-protocol GitHub organization (smart-contract libraries and tooling)
+  rather than a hosted REST/GraphQL developer API.
 url: https://raw.githubusercontent.com/api-evangelist/tribes/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Web3
+- Crypto
+- Wallet
+- Messaging
+- Social
+- DAO
+- Blockchain
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tribes-domain-security.yml
 - type: Website
   url: https://tribes.xyz/
+- type: GitHubOrganization
+  url: https://github.com/tribes-protocol
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
